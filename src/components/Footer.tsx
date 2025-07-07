@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0, delay: 0 }}
           className="border-gray-700 pt-1 text-center"
         >
           <p className="text-gray-400 text-sm">

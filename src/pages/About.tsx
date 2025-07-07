@@ -1,33 +1,36 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import HeroAbout from '../components/HeroAbout';  
 
 const About: React.FC = () => {
   return (
     <div className="bg-neutral-900 text-white min-h-screen">
+      
+      <HeroAbout />     
+      <section 
+      className="relative py-20 px-4 bg-neutral-800 overflow-hidden border-t border-neutral-500/50"
+      style={{
+        backgroundImage: `repeating-linear-gradient(
+          -45deg,
+          rgb(15, 15, 15) 0px,
+          rgb(15, 15, 15) 20px,
+          rgb(17, 17, 17) 20px,
+          rgb(17, 17, 17) 40px
+        )`
+      }}
+    >
       <div className="container mx-auto px-4 py-16">
-        {/* header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary-500">
-            About Me
-          </h1>
-          <div className="w-24 h-1 bg-primary-500 mx-auto mb-8"></div>
-        </motion.div>
 
         {/* main content */}
+
         <div className="max-w-4xl mx-auto">
           {/* intro section */}
-          <motion.section 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mb-16"
-          >
-            <div className="bg-neutral-800  p-8 shadow-lg">
+          <section className="mb-1">
+            <motion.div 
+              whileHover={{ scale: 0.98 }}
+              transition={{ duration: 0, delay: 0 }}
+              className="p-8 backdrop-blur-md bg-neutral-500/10 border-neutral-500/20"
+            >
               <p className="text-lg text-gray-300 leading-relaxed">
                 I'm a <span className="text-primary-500 font-semibold">full-stack web developer</span> with 
                 a unique background in competitive e-sports. I represented the well-known Polish e-sport 
@@ -39,25 +42,18 @@ const About: React.FC = () => {
                 <span className="text-green-400 font-semibold"> MVP of the first official Polish LAN tournament</span> (BeContender #1), 
                 and competed in leagues organized by Polska Liga Esportowa and Polsat Games.
               </p>
-            </div>
-          </motion.section>
+            </motion.div>
+          </section>
 
           {/* journey section */}
-          <motion.section 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mb-16"
-          >
-            <h2 className="text-3xl font-bold mb-8 text-center text-primary-500">
-              My Journey
-            </h2>
+          <section className="mb-16">
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-1">
               {/* current focus */}
               <motion.div 
-                whileHover={{ scale: 1.02 }}
-                className="bg-neutral-800  p-6 shadow-lg"
+                whileHover={{ scale: 0.98 }}
+                transition={{ duration: 0, delay: 0 }}
+                className="p-8 backdrop-blur-md bg-neutral-500/10 border-neutral-500/20"
               >
                 <h3 className="text-xl font-semibold mb-4 text-green-400">
                   Current Focus
@@ -71,8 +67,9 @@ const About: React.FC = () => {
 
               {/* background */}
               <motion.div 
-                whileHover={{ scale: 1.02 }}
-                className="bg-neutral-800  p-6 shadow-lg"
+                whileHover={{ scale: 0.98 }}
+                transition={{ duration: 0, delay: 0 }}
+                className="p-8 backdrop-blur-md bg-neutral-500/10 border-neutral-500/20"
               >
                 <h3 className="text-xl font-semibold mb-4 text-purple-400">
                   Background
@@ -84,32 +81,26 @@ const About: React.FC = () => {
                 </p>
               </motion.div>
             </div>
-          </motion.section>
+          </section>
 
           {/* what im building */}
-          <motion.section 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="mb-16"
-          >
+          <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center text-primary-500">
               What I'm Building
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-1">
               {[
                 { title: 'Responsive Web Applications', icon: '', color: 'text-primary-500' },
-                { title: 'Mobile Apps', icon: '', color: 'text-green-400' },
-                { title: 'Automation Tools with Python', icon: '', color: 'text-yellow-400' },
+                { title: 'Lightweight Mobile Apps', icon: '', color: 'text-green-400' },
+                { title: 'Automation Tools', icon: '', color: 'text-yellow-400' },
                 { title: 'Interactive User Interfaces', icon: '', color: 'text-purple-400' }
               ].map((item, index) => (
                 <motion.div 
                   key={item.title}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-                  className="flex items-center space-x-4 bg-neutral-800  p-4"
+                  whileHover={{ scale: 0.98 }}
+                  transition={{ duration: 0, delay: 0 }}
+                  className="flex items-center space-x-4 backdrop-blur-md bg-neutral-500/10 border-neutral-500/20 p-4"
                 >
                   <span className="text-2xl">{item.icon}</span>
                   <span className={`text-lg font-medium ${item.color}`}>
@@ -118,66 +109,25 @@ const About: React.FC = () => {
                 </motion.div>
               ))}
             </div>
-          </motion.section>
-
-          {/* currently learning */}
-          <motion.section 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
-            className="mb-16"
-          >
-            <h2 className="text-3xl font-bold mb-8 text-center text-primary-500">
-              Currently Learning
-            </h2>
-            
-            <div className="bg-neutral-800  p-8 shadow-lg">
-              <p className="text-lg text-gray-300 mb-6 text-center">
-                Expanding my knowledge in:
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-4">
-                {[
-                  'Angular framework',
-                  '.NET and C# development',
-                  'Docker and containerization',
-                  'Advanced testing with WebdriverIO'
-                ].map((skill, index) => (
-                  <motion.div 
-                    key={skill}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-                    className="flex items-center space-x-3"
-                  >
-                    <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                    <span className="text-gray-300">{skill}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.section>
+          </section>
 
           {/* call to action */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.4 }}
-            className="text-center"
-          >
+          <div className="text-center">
             <p className="text-gray-400 mb-6">
               Open to work opportunities and collaborations
             </p>
             <motion.a 
               href="/contact"
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 0.98 }}
+              transition={{ duration: 0, delay: 0 }}
               className="inline-block bg-primary-500 hover:bg-primary-500 text-black px-8 py-3  font-medium transition-all duration-300"
             >
               Contact Me
             </motion.a>
-          </motion.div>
+          </div>
         </div>
       </div>
+      </section>
     </div>
   );
 };

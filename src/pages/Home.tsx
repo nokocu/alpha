@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
-import TechStackSection from '../components/TechStackSection';
-import FeaturedProjectsSection from '../components/FeaturedProjectsSection';
+import HeroSection from '../components/Hero';
+import TechStackSection from '../components/TechStack';
+import FeaturedProjectsSection from '../components/Featured';
 
 const Home: React.FC = () => {
   return (

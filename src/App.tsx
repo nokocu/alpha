@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollBtn';
-import Navigation from './components/Navigation';
+import Navigation from './components/NavBar';
 import './App.css';
 
 function App() {

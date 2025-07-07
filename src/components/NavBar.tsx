@@ -37,7 +37,7 @@ const Navigation: React.FC = () => {
                 className={`transition-colors duration-300 px-3 py-2 text-sm font-medium ${
                   isActive(item.path) 
                     ? 'text-primary-500' 
-                    : 'text-gray-300 hover:text-white'
+                    : 'text-neutral-300 hover:text-white'
                 }`}
               >
                 {item.label}
@@ -49,7 +49,7 @@ const Navigation: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-neutral-400 focus:outline-none focus:text-neutral-400 transition-colors duration-300"
+              className="text-neutral-300 hover:text-neutral-400 focus:outline-none focus:text-neutral-400 transition-colors duration-300"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -69,19 +69,19 @@ const Navigation: React.FC = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0 }}
               className="md:hidden"
             >
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-800">
+              <div className="px-2 pt-2 pb-3 space-y-1 ">
                 {navItems.map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 ${
+                    className={`block px-3 py-2 text-base font-medium transition-colors duration-300 ${
                       isActive(item.path)
-                        ? 'text-neutral-400 bg-gray-700'
-                        : 'text-gray-300 hover:text-neutral-400 hover:bg-gray-700'
+                        ? 'text-primary-500'
+                        : 'text-neutral-300 hover:text-white'
                     }`}
                   >
                     {item.label}

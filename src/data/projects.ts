@@ -10,13 +10,13 @@ export interface Project {
 }
 
 
-export const projects = [
+export const projects: Project[] = [
     {
       id: 'alpha',
       title: 'Portfolio Website',
       description: 'Personal portfolio showcasing my projects and skills',
       tech: ['React', 'TypeScript', 'CSS', 'Git'],
-      status: 'In Progress',
+      status: 'Completed',
       repo: '#',
       demo: '#'
     },
@@ -25,7 +25,7 @@ export const projects = [
       title: 'CursedApple - Deadlock Patchnotes Tracker',
       description: 'Real-time patch tracking and categorization for Valve\'s Deadlock',
       tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-      status: 'Work in Progress',
+      status: 'In Progress',
       repo: '#',
       demo: '#'
     },
@@ -33,8 +33,8 @@ export const projects = [
       id: 'charlie',
       title: 'Expensiveless - Expense Tracker',
       description: 'Full-stack expense management with categorization and reports',
-      tech: ['Angular', '.NET Core', 'MS SQL', 'C#'],
-      status: 'Work in Progress',
+      tech: ['Angular', '.NET', 'MS SQL', 'C#'],
+      status: 'In Progress',
       repo: '#',
       demo: '#'
     },
@@ -43,7 +43,7 @@ export const projects = [
       title: 'Mieszkanieo - Polish Real Estate Aggregator',
       description: 'Web scraping dashboard for Polish real estate listings',
       tech: ['Python', 'Selenium', 'JavaScript', 'SQL', 'Docker'],
-      status: 'Work in Progress',
+      status: 'In Progress',
       repo: '#',
       demo: '#'
     },
