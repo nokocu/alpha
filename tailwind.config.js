@@ -24,6 +24,21 @@ module.exports = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
         }
+      },
+      colors: {
+
+        primary: {
+          300: '#5eead4', 
+          400: '#2dd4bf',
+          500: '#ff9600',
+          600: '#0d9488',
+          700: '#0f766e',
+        },
+        grayest: {
+          700: '#333333',
+          800: '#222222',
+          900: '#111111',
+        }
       }
     },
   },

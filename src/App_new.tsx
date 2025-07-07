@@ -16,7 +16,7 @@ function App() {
       <div className="min-h-screen bg-neutral-900 text-white">
         <Navigation />
         
-        {/* main content */}
+        {/* Main Content */}
         <main>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,10 +32,10 @@ function App() {
           </motion.div>
         </main>
 
-        {/* footer */}
+        {/* Footer */}
         <Footer />
 
-        {/* scroll to top button */}
+        {/* Scroll to Top Button */}
         <ScrollToTop />
       </div>
     </Router>
