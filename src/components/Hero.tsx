@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
     <section className="pt-10 relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* background Photo */}
       <motion.img
-        src="/assets/photo1.jpg"
+        src="./assets/photo1.jpg"
         alt="Background"
         initial={{ scale: 1 }}
         animate={{ scale: 1.05 }}
