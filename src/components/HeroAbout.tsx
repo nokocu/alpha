@@ -14,7 +14,7 @@ const HeroAbout: React.FC = () => {
     <section className="pt-10 relative h-96 flex items-center justify-center px-4 overflow-hidden">
       {/* background Photo */}
       <motion.img
-        src="/src/assets/photo2.jpg"
+        src="/assets/photo2.jpg"
         alt="Background"
         initial={{ scale: 1 }}
         animate={{ scale: 1.05 }}

@@ -4,38 +4,38 @@ import { motion } from 'framer-motion';
 const TechStackSection: React.FC = () => {
   const techStackData = {
     frontend: [
-      { name: 'HTML', icon: '/src/assets/html5.svg', color: '#E34F26' },
-      { name: 'CSS', icon: '/src/assets/css.svg', color: '#633194' },
-      { name: 'JavaScript', icon: '/src/assets/javascript.svg', color: '#F7DF1E' },
-      { name: 'TypeScript', icon: '/src/assets/typescript.svg', color: '#3178C6' },
-      { name: 'React', icon: '/src/assets/react.svg', color: '#61DAFB' },
-      { name: 'Angular', icon: '/src/assets/angular.svg', color: '#DD0031' },
-      { name: 'jQuery', icon: '/src/assets/jquery.svg', color: '#0769AD' },
-      { name: 'Capacitor', icon: '/src/assets/capacitor.svg', color: '#119EFF' }
+      { name: 'HTML', icon: '/assets/html5.svg', color: '#E34F26' },
+      { name: 'CSS', icon: '/assets/css.svg', color: '#633194' },
+      { name: 'JavaScript', icon: '/assets/javascript.svg', color: '#F7DF1E' },
+      { name: 'TypeScript', icon: '/assets/typescript.svg', color: '#3178C6' },
+      { name: 'React', icon: '/assets/react.svg', color: '#61DAFB' },
+      { name: 'Angular', icon: '/assets/angular.svg', color: '#DD0031' },
+      { name: 'jQuery', icon: '/assets/jquery.svg', color: '#0769AD' },
+      { name: 'Capacitor', icon: '/assets/capacitor.svg', color: '#119EFF' }
     ],
     backend: [
-      { name: 'Python', icon: '/src/assets/python.svg', color: '#3776AB' },
-      { name: '.NET', icon: '/src/assets/dotnet.svg', color: '#512BD4' },
-      { name: 'Node.js', icon: '/src/assets/nodedotjs.svg', color: '#339933' },
-      { name: 'C#', icon: '/src/assets/cs.svg', color: '#953dac' }
+      { name: 'Python', icon: '/assets/python.svg', color: '#3776AB' },
+      { name: '.NET', icon: '/assets/dotnet.svg', color: '#512BD4' },
+      { name: 'Node.js', icon: '/assets/nodedotjs.svg', color: '#339933' },
+      { name: 'C#', icon: '/assets/cs.svg', color: '#953dac' }
     ],
     database: [
-      { name: 'SQL', icon: '/src/assets/sql.svg', color: '#df6c20' },
-      { name: 'MS SQL', icon: '/src/assets/sql.svg', color: '#CC2927' }
+      { name: 'SQL', icon: '/assets/sql.svg', color: '#df6c20' },
+      { name: 'MS SQL', icon: '/assets/sql.svg', color: '#CC2927' }
     ],
     testing: [
-      { name: 'Selenium', icon: '/src/assets/selenium.svg', color: '#43B02A' },
-      { name: 'WebdriverIO', icon: '/src/assets/webdriverio.svg', color: '#EA5906' }
+      { name: 'Selenium', icon: '/assets/selenium.svg', color: '#43B02A' },
+      { name: 'WebdriverIO', icon: '/assets/webdriverio.svg', color: '#EA5906' }
     ],
     devops: [
-      { name: 'Git', icon: '/src/assets/git.svg', color: '#F05032' },
-      { name: 'Docker', icon: '/src/assets/docker.svg', color: '#2496ED' },
-      { name: 'VSCode', icon: '/src/assets/vsc.svg', color: '#007ACC' }
+      { name: 'Git', icon: '/assets/git.svg', color: '#F05032' },
+      { name: 'Docker', icon: '/assets/docker.svg', color: '#2496ED' },
+      { name: 'VSCode', icon: '/assets/vsc.svg', color: '#007ACC' }
     ],
     design: [
-      { name: 'Photoshop', icon: '/src/assets/ps.svg', color: '#31A8FF' },
-      { name: 'Vegas PRO', icon: '/src/assets/vegas.svg', color: '#1195cf' },
-      { name: 'FL Studio', icon: '/src/assets/fl.svg', color: '#FF7200' }
+      { name: 'Photoshop', icon: '/assets/ps.svg', color: '#31A8FF' },
+      { name: 'Vegas PRO', icon: '/assets/vegas.svg', color: '#1195cf' },
+      { name: 'FL Studio', icon: '/assets/fl.svg', color: '#FF7200' }
     ]
   };
   return (
