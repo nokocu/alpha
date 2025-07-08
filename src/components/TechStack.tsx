@@ -81,7 +81,7 @@ const TechStackSection: React.FC = () => {
                   {tech.name}
                 </span>
               ))}
-            </div>
+            </div>  
           </motion.div>
 
           {/* backend */}

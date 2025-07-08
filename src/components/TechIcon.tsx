@@ -1,8 +1,8 @@
 import React from 'react';
 
-// Tech data with icons and brand colors
+// tech data with icons and brand colors
 export const techData: Record<string, { icon: string; color: string }> = {
-  // Frontend
+  // frontend
   'HTML': { icon: '/src/assets/html5.svg', color: '#E34F26' },
   'CSS': { icon: '/src/assets/css.svg', color: '#1572B6' },
   'JavaScript': { icon: '/src/assets/javascript.svg', color: '#F7DF1E' },
@@ -12,33 +12,33 @@ export const techData: Record<string, { icon: string; color: string }> = {
   'jQuery': { icon: '/src/assets/jquery.svg', color: '#0769AD' },
   'Capacitor': { icon: '/src/assets/capacitor.svg', color: '#119EFF' },
   
-  // Backend
+  // backend
   'Python': { icon: '/src/assets/python.svg', color: '#3776AB' },
   '.NET': { icon: '/src/assets/dotnet.svg', color: '#512BD4' },
   'Node.js': { icon: '/src/assets/nodedotjs.svg', color: '#339933' },
   'C#': { icon: '/src/assets/cs.svg', color: '#239120' },
   
-  // Database
+  // database
   'SQL': { icon: '/src/assets/sql.svg', color: '#CC2927' },
   'MS SQL': { icon: '/src/assets/sql.svg', color: '#CC2927' },
   'PostgreSQL': { icon: '/src/assets/sql.svg', color: '#336791' },
   
-  // Testing
+  // testing
   'Selenium': { icon: '/src/assets/selenium.svg', color: '#43B02A' },
   'WebdriverIO': { icon: '/src/assets/webdriverio.svg', color: '#EA5906' },
   'Mocha': { icon: '/src/assets/javascript.svg', color: '#8D6748' },
   
-  // DevOps
+  // devOps
   'Git': { icon: '/src/assets/git.svg', color: '#F05032' },
   'Docker': { icon: '/src/assets/docker.svg', color: '#2496ED' },
   'VSCode': { icon: '/src/assets/vsc.svg', color: '#007ACC' },
   
-  // Design
+  // design
   'Photoshop': { icon: '/src/assets/ps.svg', color: '#31A8FF' },
   'Vegas PRO': { icon: '/src/assets/vegas.svg', color: '#FF6B35' },
   'FL Studio': { icon: '/src/assets/fl.svg', color: '#FF7200' },
   
-  // Other
+  // other
   'BPMN': { icon: '/src/assets/html5.svg', color: '#FF6B6B' } // Using HTML5 icon as placeholder
 };
 
@@ -69,7 +69,7 @@ const TechIcon: React.FC<TechIconProps> = ({
     lg: 'gap-3'
   };
 
-  // If tech not found, render without icon
+  // if tech not found, render without icon
   if (!tech || !showIcon) {
     return (
       <span className={`text-gray-200 ${className}`}>
