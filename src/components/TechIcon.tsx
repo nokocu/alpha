@@ -39,7 +39,7 @@ export const techData: Record<string, { icon: string; color: string }> = {
   'FL Studio': { icon: '/assets/fl.svg', color: '#FF7200' },
   
   // other
-  'BPMN': { icon: '/assets/html5.svg', color: '#FF6B6B' } // Using HTML5 icon as placeholder
+  'BPMN': { icon: '/assets/html5.svg', color: '#FF6B6B' }
 };
 
 interface TechIconProps {
